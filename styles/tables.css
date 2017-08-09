@@ -1,0 +1,53 @@
+/*
+Template Name: Education Time
+File: Tables CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+table{
+	width:100%;
+	border-collapse:collapse;
+	table-layout:auto;
+	vertical-align:top;
+	margin-bottom:15px;
+	border:1px solid #F8F9F3;
+	color:#000000;
+	}
+
+table thead th{
+	color:#000000;
+	background-color:#F8F9F3;
+	border:1px solid #CCCCCC;
+	border-collapse:collapse;
+	text-align:center;
+	table-layout:auto;
+	vertical-align:middle;
+	}
+
+table tbody td
+{
+    color:#000000;
+	vertical-align:top;
+	border-collapse:collapse;
+	border-left:1px solid #F8F9F3;
+	border-right:1px solid #F8F9F3;
+	}
+	
+table thead th, table tbody td
+{
+    color:#000000;
+	padding:5px;
+	border-collapse:collapse;
+	}
+
+table tbody tr.light{
+	color:#666666;
+	background-color:#F8F9F3;
+	}
+
+table tbody tr.dark{
+	color:#666666;
+	background-color:#F8F9F3;
+	}

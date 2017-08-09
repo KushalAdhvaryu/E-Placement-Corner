@@ -1,0 +1,192 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master_general.master.cs"
+    Inherits="master_general" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>E-placement Corner</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+    <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper row1">
+        <div id="header" class="clear">
+    <div class="fl_left">
+    
+      <h1><a href="home.aspx">E-Placement Corner</a></h1>
+      <p>Online Management to placement cell</p>
+    </div>
+       
+       
+       
+    <div class="fl_right">
+    <%-- <form   id="login">--%>
+     <asp:Panel ID="Panel_login" runat="server">
+    <div id="login">
+      <%--<fieldset>
+        <legend>Student Login</legend>--%>
+        <%--<input type="password" />
+        <input type="text" />--%>
+
+        <div > <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Password</a></div>
+          <asp:TextBox ID="TextBox_password" TextMode="Password" runat="server"></asp:TextBox>
+          <asp:TextBox ID="TextBox_uid" runat="server"></asp:TextBox>
+          
+        <div id="forgot">Need <a href="contact_us.aspx">Help ?</a> or <a href="forgot_password.aspx">Forgot Your Details ?</a></div>
+        <%--<input type="image" src="images/sign_in.gif" id="signin" alt="Sign In" />--%>
+          <asp:ImageButton ID="signin" type="image" runat="server" 
+              ImageUrl="~/images/sign_in.jpg" alt="Sign In" onclick="signin_Click" 
+            Height="25px" Width="90px" CausesValidation="false" />
+        
+    </div>
+       
+      <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      New User? &nbsp;&nbsp;
+       <asp:ImageButton ID="signup"  runat="server" 
+              ImageUrl="~/images/sign_up.jpg" alt="Sign In"  
+            Height="25px" Width="90px" onclick="signup_Click" CausesValidation="false"/>
+        </div>
+         </asp:Panel>
+    <%--  </fieldset>--%>
+   
+     <asp:Panel ID="Panel_logout" runat="server">
+          <div>
+          <asp:Label ID="Label_welcome" runat="server" Text="Welcome" BackColor="#03274B" 
+            Font-Italic="True" Height="16px" Width="85px" Font-Size="Large" ForeColor="White"></asp:Label>    
+          <asp:Label ID="Label1" runat="server" Text="User name" BackColor="#03274B" 
+            Font-Italic="True" Height="16px" Width="100px" Font-Size="Large" ForeColor="White"></asp:Label>
+           <%-- <asp:Button ID="logout" runat="server" Text="Logout" onclick="logout_Click" CausesValidation= "false" />--%>
+              <asp:ImageButton ID="logout" runat="server" onclick="logout_Click" 
+                  CausesValidation= "false" Height="25px" Width="90px" 
+                  ImageUrl="~/images/log_out.jpg"/>
+             </div></asp:Panel>
+   
+   
+    </div>
+    
+     
+  
+  </div>
+    </div>
+    <div class="wrapper row2">
+        <div id="topnav">
+            <ul>
+                <li><a href="Admin_home.aspx">Home</a></li>
+                <li><a  href="Admin_placements.aspx">History</a>
+                </li>
+                <li><a href="Admin_reg_menu.aspx">Manage users</a>
+                <ul>
+                        <li><a href="Admin_stud_reg.aspx">Student Basic Details</a></li>
+                        <li><a href="Admin_academic.aspx">Student Academic Details</a></li>
+                        <li><a href="Admin_cmp_reg.aspx">Comapany data</a></li>
+                        <li><a href="Admin_fac_reg.aspx">Faculty data</a></li>
+                    </ul></li>
+                    
+                <li><a href="Admin_article.aspx">Manage Article</a>
+               
+                </li>
+                <li><a href="#"> Manage Aptitude</a>
+                <ul>
+                        <li><a href="Admin_subject.aspx">Manage Subjects</a></li>
+                        <li><a href="Admin_question.aspx">Manage Questions</a></li>
+                        <li><a href="Admin_result.aspx">Manage Result</a></li>
+                    </ul></li>
+                    <li><a href="Admin_zeroday.aspx">Placement Result</a></li>
+                    <li class="last"><a href="contact_us.aspx">Contact us</a></li>
+               
+            </ul>
+            <div class="clear">
+            
+            </div>
+        </div>
+    </div>
+    <div class="wrapper row4">
+        
+    
+        
+    
+        <div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="wrapper row5">
+  <div id="footer" class="clear">
+   
+    <div class="foot_contact">
+      <h2>Nirma University</h2>
+      <address>
+      Sarkhej-Gandhinagar Highway,<br />
+       Post Chandlodia,<br />
+      Gota, Ahmedabad,<br />
+      Gujarat,382481
+      </address>
+      <ul>
+        <li><strong>Tel:</strong> +91 - 2717 - 241900 to 04</li>
+        <li><strong>Fax:</strong>+91 - 2717 - 241916 - 17 </li>
+        <li class="last"><strong>Email:</strong> <a href="#"> asst_registrar@nirmauni.ac.in</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Administration</h2>
+      <ul>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Website Privacy</a></li>
+        <li><a href="#">Press Release Information</a></li>
+        <li><a href="#">Annual Report</a></li>
+        <li><a href="#">Job Vacancies</a></li>
+       
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Student</h2>
+      <ul>
+        <li><a href="#">Schools and Colleges</a></li>
+        <li><a href="#">Student Activities</a></li>
+        <li><a href="#">Student Development</a></li>
+        <li><a href="#">Student Group Directory</a></li>
+        <li><a href="#">International Students</a></li>
+      </ul>
+    </div>
+    <div class="footbox last">
+      <h2>Academic</h2>
+      <ul>
+        <li><a href="#">Academic Assistance</a></li>
+        <li><a href="#">Academic Calendars</a></li>
+        <li><a href="#">Academics Office</a></li>
+        <li><a href="#">Administration</a></li>
+        <li><a href="#">Alumni Chapters</a></li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</div>
+    <div class="wrapper">
+        <div id="copyright" class="clear">
+            <p class="fl_left">
+                Copyright &copy; 2014 - All Rights Reserved - <a href="#">Major Project</a></p>
+            <p class="fl_right">
+                Design by :-<a href="about_developer.aspx" title="E-placement Corner">Kushal & Setu</a></p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

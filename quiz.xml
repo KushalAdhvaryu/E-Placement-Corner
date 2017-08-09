@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+
+    <question>Statement 1</question>
+    <answer>A 1</answer>
+    <answer correct="yes">B 1</answer>
+    <answer>C 1</answer>
+    <answer>D 1</answer>
+  </mchoice>
+  <mchoice>
+    <question>Statement 2</question>
+    <answer>A 2</answer>
+    <answer correct="yes">B 2</answer>
+    <answer>C 2</answer>
+    <answer>D 2</answer>
+  </mchoice>
+  <mchoice>
+    <question>Statement 3</question>
+    <answer>A 3</answer>
+    <answer correct="yes">B 3</answer>
+    <answer>C 3</answer>
+    <answer>D 3</answer>
+  </mchoice>
+  <mchoice>
+    <question>Statement 4</question>
+    <answer>A 4</answer>
+    <answer correct="yes">B 4</answer>
+    <answer>C 4</answer>
+    <answer>D 4</answer>
+  </mchoice>
+  <mchoice>
+    <question>Statement 5</question>
+    <answer>A 5</answer>
+    <answer correct="yes">B 5</answer>
+    <answer>C 5</answer>
+    <answer>D 5</answer>
+  </mchoice>
+  <mchoice>
+    <question>Statement 6</question>
+    <answer>A 6</answer>
+    <answer correct="yes">B 6</answer>
+    <answer>C 6</answer>
+    <answer>D 6</answer>
+  </mchoice>
+  <mchoice>
+    <question>Statement 7</question>
+    <answer>A 7</answer>
+    <answer correct="yes">B 7</answer>
+    <answer>C 7</answer>
+    <answer>D 7</answer>
+  </mchoice>
+  <mchoice>
+    <question>Statement 8</question>
+    <answer>A 8</answer>
+    <answer correct="yes">B 8</answer>
+    <answer>C 8</answer>
+    <answer>D 8</answer>
+   
+  </mchoice>
+  <mchoice>
+    <question>Statement 9</question>
+    <answer>A 9</answer>
+    <answer correct="yes">B 9</answer>
+    <answer>C 9</answer>
+    <answer>D 9</answer>
+  </mchoice>
+  <mchoice>
+    <question>Statement 10</question>
+    <answer>A 10</answer>
+    <answer correct="yes">B 10</answer>
+    <answer>C 10</answer>
+    <answer>D 10</answer>
+  </mchoice>
+</quiz>
